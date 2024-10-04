@@ -18,3 +18,23 @@
 - Let's break down this example:
     - **#!:** This is the shebang sequence that indicates the start of the shebang line.
     - **/bin/bash:** This is the path to the Bash interpreter binary. It tells the system to use the Bash interpreter to execute the script.
+
+# How to Execute Script -
+- **Step 1: Create a Shell Script**
+    - Open a Text Editor: You can use any text editor like vim, nano.
+        - vim my_script.sh
+    - Add the Shebang Line: This line indicates which interpreter to use.
+        - #!/bin/bash
+    - Write Your Script: Below the shebang line, you can write your script.
+        - #!/bin/bash
+        - echo "Hello, World!"
+- **Step 2: Make the Script Executable**
+    - Before you can run your script, you need to make it executable by assigning execute permission.
+        - chmod +x my_script.sh
+        - chmod 755 my_script.sh
+- **Step 3: Execute the Script**
+    - ./my_script.sh or
+    - bash my_script.sh
+
+ 
+   
