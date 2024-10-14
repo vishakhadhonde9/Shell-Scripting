@@ -6,9 +6,9 @@
 - elif: Checks an additional condition if the previous one was false.
 - else: Executes if all previous conditions are false.
 #### syntax:
-  if {condition}
-  then
-      {execute this}
-  else
-      {execute this}
-  fi
+    - if {condition}
+      then
+        {execute this}
+      else
+        {execute this}
+      fi
