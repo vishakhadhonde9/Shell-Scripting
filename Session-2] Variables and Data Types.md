@@ -16,6 +16,16 @@
 - The variable name should start with the alphabet only and the variable should not start with a Number/digit (like 1a,2c etc).
 - It is recommended to use UPPERCASE characters.
 
+# Read-only Variables -
+- Shell provides a way to mark variables as read-only by using the read-only command.
+- After a variable is marked read-only, its value cannot be changed.
+- For example, the following script generates an error while trying to change the value of NAME −
+
+   - #!/bin/sh
+   - NAME="Zara Ali"
+   - readonly NAME
+   - NAME="Qadiri"
+
 # Data Types-
 - Shell scripting doesn't have strict data types like other programming languages.
 - Variables are treated as strings by default.
