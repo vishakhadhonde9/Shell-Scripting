@@ -30,7 +30,7 @@
         - echo "Hello, World!"
 - **Step 2: Make the Script Executable**
     - Before you can run your script, you need to make it executable by assigning execute permission.
-        - chmod +x my_script.sh
+        - chmod a+x my_script.sh
         - chmod 755 my_script.sh
 - **Step 3: Execute the Script**
     - ./my_script.sh or
