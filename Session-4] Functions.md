@@ -48,3 +48,46 @@
         
         # Call the function with two arguments
         add_numbers 5 10
+
+
+# Scope of Variables-
+- Variables declared within a function have local scope, meaning they're only accessible within that function. To create local variables, use the local keyword. 
+- Variables declared outside functions have global scope and can be accessed from anywhere.
+
+### Examples -
+     1] Global Variable-
+        #!/bin/bash
+
+        # Global variable
+        greeting="Hello"
+        
+        # Function that accesses the global variable
+        greet() {
+            echo "$greeting, world!"
+        }
+        
+        # Access global variable outside the function
+        echo "Greeting message: $greeting"
+        
+        # Call the function
+        greet
+        
+     2] Local Variable -
+        #!/bin/bash
+
+        # Global variable
+        greeting="Hello"
+        
+        # Function with a local variable that shadows the global variable
+        greet() {
+            local greeting="Hi"
+            echo "Inside function: $greeting"  # Uses the local variable
+        }
+        
+        # Call the function
+        greet
+        
+        # Access the global variable outside the function
+        echo "Outside function: $greeting"  # Uses the global variable
+        
+                
