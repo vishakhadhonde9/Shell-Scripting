@@ -42,12 +42,45 @@
     echo "Concatenated string: $result"
 
 ####  Substring Extraction: You can extract a portion of a string using substrings. 
-   #!/bin/bash
-   string="Hello, World!"
-   substring=${string:7:5} # Starting from index 7, extract 5 characters
-   echo "Substring: $substring"
+     #!/bin/bash
+     string="Hello, World!"
+     substring=${string:7:5} # Starting from index 7, extract 5 characters
+     echo "Substring: $substring"
   
+#### Searching and Replacing: Searching involves finding a specific substring within a string, and replacing involves substituting one substring with another.
+     #!/bin/bash
+     string="Hello, World! Hello!"
+     search="Hello"
+     replace="Hi"
+     result=${string//$search/$replace} # Replace all occurrences
+     echo "Original string: $string"
+     echo "Result after replacement: $result"
 
+# Array -
+- Array is data type that stores a collection of elements of the same type in contiguous memory locations.
+
+## 3. Array Manipulation - 
+- You can modify arrays by adding, removing, and updating elements.
+#### Example -
+     #!/bin/bash
+     fruits=("Apple" "Banana" "Orange")
+     
+     # Adding an element
+     fruits+=("Grapes")
+     
+     # Updating an element
+     fruits[1]="Mango"
+    
+     # Removing an element
+     unset fruits[0]
+    
+     # Display the modified array
+     echo "Modified array:"
+     for fruit in "${fruits[@]}"; do
+       echo "Fruit: $fruit"
+     done
+    
+     
 # Example-
 
     #!/bin/bash
