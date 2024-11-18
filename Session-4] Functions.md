@@ -8,6 +8,10 @@
 
 ## Calling function-
         functionName arguments
+## Arguments-
+- Shell functions can accept arguments just like command-line scripts.
+- You access these arguments using special variables: $1 for the first argument, $2 for the second, and so on.
+- To access all the arguments, you use $@ or $*.
 
 ## Example-
      1]
