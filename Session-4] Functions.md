@@ -84,10 +84,9 @@
             echo "Inside function: $greeting"  # Uses the local variable
         }
         
-        # Call the function
-        greet
         
         # Access the global variable outside the function
         echo "Outside function: $greeting"  # Uses the global variable
         
-                
+         # Call the function
+        greet
