@@ -108,4 +108,30 @@
      done
 
 #### Examples -
-      
+            #!/bin/bash
+
+            # Display a menu with options
+            PS3="Please select an option (1-4): "  # Customize the prompt for the select loop
+            
+            select option in "Option 1" "Option 2" "Option 3" "Exit"
+            do
+                case $option in
+                    "Option 1")
+                        echo "You selected Option 1"
+                        ;;
+                    "Option 2")
+                        echo "You selected Option 2"
+                        ;;
+                    "Option 3")
+                        echo "You selected Option 3"
+                        ;;
+                    "Exit")
+                        echo "Exiting..."
+                        break  # Exit the loop
+                        ;;
+                    *)
+                        echo "Invalid option, please try again."
+                        ;;
+                esac
+            done
+            
