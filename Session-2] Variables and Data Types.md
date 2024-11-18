@@ -30,6 +30,24 @@
 - Shell scripting doesn't have strict data types like other programming languages.
 - Variables are treated as strings by default.
 
+# String Manipulation -
+- String is set of charachters, words, integers and numbers in single unit.
+- String is defined in " ".
+- String manipulation in shell scripting involves various operations on strings, such as concatenation, substring extraction, searching, and replacing.
+####  Concatenation - Concatenation involves combining two or more strings to create a new string. 
+    #!/bin/bash
+    string1="Hello, "
+    string2="World!"
+    result=$string1$string2
+    echo "Concatenated string: $result"
+
+####  Substring Extraction: You can extract a portion of a string using substrings. 
+   #!/bin/bash
+   string="Hello, World!"
+   substring=${string:7:5} # Starting from index 7, extract 5 characters
+   echo "Substring: $substring"
+  
+
 # Example-
 
     #!/bin/bash
