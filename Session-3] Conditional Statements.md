@@ -12,6 +12,40 @@
       else
         {execute this}
       fi
+#### Example -
+     Example-1
+            #!/bin/bash
+            
+            # Input temperature value
+            echo "Enter the temperature:"
+            read temp
+            
+            if [ $temp -ge 30 ]; then
+                echo "It's hot!"
+            elif [ $temp -ge 20 ]; then
+                echo "The weather is warm."
+            elif [ $temp -ge 10 ]; then
+                echo "It's a bit chilly."
+            else
+                echo "It's cold!"
+            fi
+
+        Example -2
+            
+            #!/bin/bash
+            
+            read -p "Enter your marks: " marks
+            
+            if [ $marks -ge 90 ]; then
+                echo "Grade: A"
+            elif [ $marks -ge 75 ]; then
+                echo "Grade: B"
+            elif [ $marks -ge 50 ]; then
+                echo "Grade: C"
+            else
+                echo "Grade: F"
+            fi
+
 
 # Looping -
 - Looping structures help you repeat a set of commands multiple times.
