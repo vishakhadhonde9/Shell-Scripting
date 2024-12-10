@@ -34,7 +34,8 @@
             
             #!/bin/bash
             
-            read -p "Enter your marks: " marks
+            echo "Enter your marks: " 
+            read marks
             
             if [ $marks -ge 90 ]; then
                 echo "Grade: A"
