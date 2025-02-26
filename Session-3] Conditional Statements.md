@@ -136,6 +136,27 @@
 -  select loop provides a simple way to present a menu to the user and let them choose an option.
 -  It is often used in interactive scripts where you want the user to select an option from a list.
 
+## Case Statement -
+
+            case variable in 
+                  option1)
+                        commands to execute ....
+                        ;;
+            
+                  option2)
+                         commands to execute ....
+                          ;;
+            
+                  *)
+            
+                  default part outside the loop
+                  ;;
+            
+            esac
+             
+      
+      
+
 ### Syntax -
      select var in option1 option2 option3 ... 
      do
