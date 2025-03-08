@@ -100,10 +100,11 @@
         echo "Please enter a number between 1 and 10:"
         read num
         while [ $num -lt 1 ] || [ $num -gt 10 ]; do
-            echo "Invalid input. Please enter a number between 1 and 10:"
-            read num
+            echo "Valid Input: $num"
+            
         done
-        echo "You entered a valid number: $num"
+        echo "Invalid input. Please enter a number between 1 and 10:"
+        read num
  
  # Conditions -
 - -lt (less than)
