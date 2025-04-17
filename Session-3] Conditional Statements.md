@@ -99,7 +99,7 @@
      2] #!/bin/bash
         echo "Please enter a number between 1 and 10:"
         read num
-        while [ $num -lt 1 ] || [ $num -gt 10 ]; do
+        while [ $num -gl 1 ] || [ $num -lt 10 ]; do
             echo "Valid Input: $num"
             
         done
